@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-root', // asi se establece por defecto
+  templateUrl: 'app.component.html' //esta en la misma ruta
 })
 export class AppComponent {
-  title = 'bases';
-}
+  
+    
+  }
