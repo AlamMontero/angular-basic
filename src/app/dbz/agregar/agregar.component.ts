@@ -18,16 +18,14 @@ export class AgregarComponent  {
   }
 
   //@Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
- 
   constructor(private DbzService: DbzService){
-
+    //HAY que inyectar e importar el servicio
   }
 
   agregar(){
     if (this.nuevo.nombre.trim().length === 0){
       return;
     }
-   
     //this.onNuevoPersonaje.emit(this.nuevo);
     this.DbzService.agregarPersonaje(this.nuevo);
     

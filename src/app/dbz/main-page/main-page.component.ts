@@ -10,24 +10,20 @@ import { DbzModule } from '../dbz.module';
 })
 export class MainPageComponent {
 
-
-
   nuevo: Personaje = {
     nombre: 'Maestro Roshi',
     poder: 1299
   }
-
 
   // agregarNuevoPersonaje(argumento: Personaje){
   //     this.personajes.push(argumento);
   //   }
 
     constructor( private DbzService: DbzService  ){
-      
+      //inyecccion de dependencias
     }
 
   // cambiarNombre(event:any){
   //   console.log(event.target.value);
   // }
-
 }

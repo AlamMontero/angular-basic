@@ -11,11 +11,10 @@ import { DbzService } from '../services/dbz.service';
 export class PersonajesComponent  {
 
 get personajes(){
-  return this.DbzService.personajes;
+  return this.DbzService.personajes; //es el getter de personajes que se encuentra en services
 }
 
- constructor(private DbzService: DbzService){
-   
- }
+constructor(private DbzService: DbzService){
+}
 
 }
